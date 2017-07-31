@@ -3,3 +3,19 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.active>li{
+  background-color: #006400;
+}
+
+#sideBarList li:hover{
+  background-color: #00a600;
+}
+
+.active svg, .active h3{
+  color: white;
+}
+
+#sideBarList li:hover svg, #sideBarList li:hover h3{
+  color: white;
+}

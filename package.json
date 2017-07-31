@@ -3,14 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "express": "^4.15.3",
+    "material-ui": "next",
+    "material-ui-icons": "^1.0.0-alpha.19",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.2",
     "react-scripts": "1.0.10"
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:server": "node server",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "prettier 'src/**/*.js' 'src/components/**/*.js' '*.js' --write --single-quote --no-semi && standard --fix",
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.2",
+    "prettier": "^1.5.3",
+    "standard": "^10.0.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --single-quote --no-semi",
+      "standard --fix",
+      "git add"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint"
   }
 }
