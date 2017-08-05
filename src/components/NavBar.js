@@ -50,7 +50,7 @@ export class NavBar extends Component {
     return (
       <div>
         <div className={classes.root}>
-          <AppBar className={classes.navBar} position='static'>
+          <AppBar className={classes.navBar}>
             <Toolbar>
               <IconButton
                 color='contrast'

@@ -10,7 +10,7 @@ import Resources from './../views/Resources'
 export class Routes extends Component {
   render () {
     return (
-      <div>
+      <div className='bodyMargin'>
         <Route exact path='/' component={Home} />
         <Route path='/Members' component={Members} />
         <Route path='/Chat' component={Chat} />

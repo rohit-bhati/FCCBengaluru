@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "material-ui": "next",
     "material-ui-icons": "^1.0.0-alpha.19",
@@ -16,7 +17,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:server": "node server",
+    "server": "nodemon server",
+    "start:server": "yarn build && yarn start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
@@ -27,6 +29,8 @@
     "babel-eslint": "^7.2.3",
     "husky": "^0.14.3",
     "lint-staged": "^4.0.2",
+    "mongoose": "^4.11.5",
+    "nodemon": "^1.11.0",
     "prettier": "^1.5.3",
     "standard": "^10.0.2"
   },

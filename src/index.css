@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #d9d5db;
 }
 
 .active>li{
@@ -18,4 +19,8 @@ body {
 
 #sideBarList li:hover svg, #sideBarList li:hover h3{
   color: white;
+}
+
+.bodyMargin{
+  margin-top: 80px;
 }
